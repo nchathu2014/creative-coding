@@ -10,6 +10,15 @@
 <body>
     <h1>Creative Coding</h1>
     <canvas width=600 height=600></canvas>
-    <button id="btn-stop">STOP</button>
+   <div>
+    <button id="btn-stop" onclick="stop()">STOP</button>
+    <button id="btn-stop" onclick="speedUp(1000)">2X</button>
+    <button id="btn-stop" onclick="speedUp(500)">4X</button>
+    <button id="btn-stop" onclick="start()">START</button>
+   </div>
+
+   <hr/>
+
+   <canvas id='example-canvas' width="600" height="600"></canvas>
 </body>
 </html>
