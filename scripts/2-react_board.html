@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <canvas width="600" height="600"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+        context.lineWidth = 2;
+
+  
+  
+        for(let i = 0;i<5;i++){
+            for(let j=0;j<5;j++){
+                let width = 50;
+                let height = 50;
+                let gap = 10;
+
+                let x = 50 + (width + gap) * i; 
+                let y = 50 + (height + gap) * j;;
+            
+                createRectangle(x,y,width,height);
+            }
+        }
+        
+    
+
+        function createRectangle(x,y,width,height){
+
+            context.beginPath();
+            context.rect(x,y,width,height);
+            context.stroke();
+            
+        }
+
+       
+        
+
+    </script>
+</body>
+</html>
